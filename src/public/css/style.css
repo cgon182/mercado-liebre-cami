@@ -74,10 +74,11 @@ div.title h3{
 nav.topbar ul {
   display: flex;
   background-color: #EAC926;
-  font-size: 1.6vw;
+  font-size: 2.4rem;
+  justify-content: center;
 }
 
-nav.topbar ul li{
+nav.topbar ul div.second-list li {
   justify-content: space-between;
   margin: 24px;
   padding-left: 8px;
@@ -85,5 +86,10 @@ nav.topbar ul li{
 
 nav.topbar div.first-list {
   display: flex;
-  margin-right: 16rem;
+  margin-right: 12rem;
+}
+
+nav.topbar div.second-list {
+  display: flex;
+  margin-left: 8px;
 }
