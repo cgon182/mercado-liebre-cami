@@ -1,0 +1,89 @@
+/* Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header div.header {
+  background-color: #EAC926;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+div.header img.logo {
+  display: flex;
+  width: 30%; 
+  overflow: hidden;
+}
+
+div.banner img {
+  width: 100%;
+  display: flex;
+}
+
+#busqueda {
+  width: 100%;
+  display: flex;
+  font-size: 1.4vw;
+  padding: 16px;
+  margin-right:8px;
+}
+
+.search form {
+  display: flex;
+  height: 3.6rem;
+  margin-left: 16px;
+}
+
+.search form button {
+  display: flex;
+  padding: 16px;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-right: 16px;
+}
+
+header div.header div#pay-header {
+  font-size: 1.6vw;
+}
+
+div.title h3{
+  font-size: 2vw;
+  margin: 24px;
+  color: #666;
+}
+
+nav.topbar ul {
+  display: flex;
+  background-color: #EAC926;
+  font-size: 1.6vw;
+}
+
+nav.topbar ul li{
+  justify-content: space-between;
+  margin: 24px;
+  padding-left: 8px;
+}
+
+nav.topbar div.first-list {
+  display: flex;
+  margin-right: 16rem;
+}
