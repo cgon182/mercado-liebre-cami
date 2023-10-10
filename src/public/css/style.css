@@ -84,9 +84,16 @@ nav.topbar ul div.second-list li {
   padding-left: 8px;
 }
 
-nav.topbar div.first-list {
+nav.topbar ul div.first-list li {
   display: flex;
   margin-right: 12rem;
+  align-items: center;
+}
+
+nav.topbar div.first-list {
+  margin-right: 12rem;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 nav.topbar div.second-list {
