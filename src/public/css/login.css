@@ -157,6 +157,20 @@ label.form-title {
     margin-top: 16px;
 }
 
+.submit{
+  background-color: #ffffff;
+  color: #1259c3;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  border: #1259c3 solid 1px;
+  transition: background-color 0.3s;
+}
+
+.submit:hover{
+  color: white;
+  background-color: #0022AA;
+}
+
 .reset{
     border: #03264C 1px solid;
     color: #03264C;

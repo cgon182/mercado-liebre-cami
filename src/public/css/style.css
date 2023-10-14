@@ -87,7 +87,6 @@ div.banner img {
   font-size: 1.5vw;
 }
 
-
 header div.header div#pay-header {
   font-size: 1.6vw;
 }
@@ -130,7 +129,6 @@ section.products {
 section.products article {
   background-color: white;
   width: 22%;
-  box-shadow: 0px 0px 10px rgb(100, 100, 100);
   margin: 10px;
   padding: 15px;
 }
@@ -169,7 +167,18 @@ section.products article div.cost-discount i.truck {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: 0(deg);
 }
+
+section.products article div.cost-discount i.truck:hover {
+  transform: rotate(-90deg);
+}
+
+
+
+
+
 
 section.products article div.cost-discount span.discount {
   font-size: 16px;
@@ -189,6 +198,17 @@ section.products article div.cost-discount span.cost {
 section.products article div.description span {
   font-size: 16px;
   color: #666;
+  opacity: 0;
+  transition-duration:  0.3s;
+  box-shadow: none;
+}
+
+section.products article:hover div.description span{
+  opacity: 1;
+}
+
+section.products article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 footer {
@@ -205,8 +225,16 @@ footer {
 footer i.footer-icon {
   font-weight: 900;
   color: #1259c3; 
-  font-size: 1rem;
+  font-size: 1.6rem;
+  transition: 0.3s;
 }
+
+footer i.footer-icon:hover {
+  color: #03264C; 
+}
+
+
+
 
 
 footer div.credit-card, div.delivery, div.security {
@@ -332,7 +360,7 @@ p.copyright {
   } 
 
   section.products article div.products-img {
-    height: auto;
+    height: 80%;
   }
 
 }
@@ -343,7 +371,7 @@ p.copyright {
   } 
 
   section.products article div.products-img {
-    height: auto;
+    height: 80%;
   }
 
   footer p.footer-title{
