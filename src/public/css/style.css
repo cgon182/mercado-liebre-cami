@@ -4,7 +4,13 @@ Azul: #03264C;
 Celeste: #1259c3;
 Gris oscuro: #666;
 Gris claro: #ebebeb;
-Verde: #39b54a; */
+Verde: #39b54a; 
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
 
 * {
   margin: 0;
@@ -16,7 +22,15 @@ Verde: #39b54a; */
 }
 
 html {
-  font-size: 62.5%;
+  background-color: #ebebeb;
+}
+
+header {
+  background-color: #EAC926;
+}
+
+div.header div.burger-menu {
+  display: none;
 }
 
 header div.header {
@@ -26,6 +40,7 @@ header div.header {
   width: 100%;
   justify-content: space-around;
   padding: 24px;
+  gap: 24px;
 }
 
 div.header img.logo {
@@ -43,14 +58,18 @@ div.banner img {
   width: 100%;
   display: flex;
   font-size: 1.4vw;
-  padding: 16px;
+  padding: 8px;
   margin-right:8px;
 }
 
 .search form {
   display: flex;
-  height: 3.6rem;
+  height: 4vw;
   margin-left: 16px;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .search form button {
@@ -59,7 +78,15 @@ div.banner img {
   align-content: center;
   flex-wrap: wrap;
   margin-right: 16px;
+  width: 3vw;
+  height: 3.1vw;
+  justify-content: center;
 }
+
+.search form button i {
+  font-size: 1.5vw;
+}
+
 
 header div.header div#pay-header {
   font-size: 1.6vw;
@@ -73,30 +100,233 @@ div.title h3{
 
 nav.topbar ul {
   display: flex;
+  justify-content: space-around;
   background-color: #EAC926;
-  font-size: 2.4rem;
-  justify-content: center;
 }
 
-nav.topbar ul div.second-list li {
-  justify-content: space-between;
-  margin: 24px;
-  padding-left: 8px;
-}
-
-nav.topbar ul div.first-list li {
+nav.topbar div.list {
   display: flex;
-  margin-right: 12rem;
-  align-items: center;
+  font-size: 1.6vw;
 }
 
-nav.topbar div.first-list {
-  margin-right: 12rem;
-  align-content: center;
+nav.topbar div.list li {
+  justify-content: space-between;
+  display: flex;
+  margin: 16px;
+}
+
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+  margin-left: 6px; 
+  color: #000000;
+}
+
+section.products {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-nav.topbar div.second-list {
+section.products article {
+  background-color: white;
+  width: 22%;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  margin: 10px;
+  padding: 15px;
+}
+
+section.products article div.products-img{
+  height: 25vw;
   display: flex;
-  margin-left: 8px;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+div.cost-discount {
+  position:relative;
+  border-top: 1px solid #ebebeb;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.products article div.cost-discount i.truck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+section.products article div.cost-discount span.discount {
+  font-size: 16px;
+  color: #39b54a;
+  display: flex;
+  width: 70%;
+  margin-left: 16px;
+}
+
+section.products article div.cost-discount span.cost {
+  font-size: 18px;
+  display: flex;
+  width: 30%;
+  margin-right: 16px;
+}
+
+section.products article div.description span {
+  font-size: 16px;
+  color: #666;
+}
+
+footer {
+  display: flex;
+  color: #666;
+  gap: 8px;
+  margin-left: 30px;
+  margin-right: 30px;
+  justify-content: center;
+  margin-top: 32px;
+
+}
+
+footer i.footer-icon {
+  font-weight: 900;
+  color: #1259c3; 
+  font-size: 1rem;
+}
+
+
+footer div.credit-card, div.delivery, div.security {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer p.footer-title{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer p.footer-text, p.copyright{
+  font-size: 12px;
+}
+
+p.copyright {
+  color: #666;
+  margin-left: 24px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 481px) { 
+  div.header div.burger-menu {
+    display:flex;
+  } 
+
+  header div.header {
+    flex-wrap: wrap;
+  }
+
+  div.header img.logo, div.search {
+    display: flex;
+    width: 45%;
+  }
+
+  input#busqueda {
+    font-size: 12px;
+    height: 2rem;
+  }
+
+  .search form button {
+    width: 2rem;
+    height: 2rem;
+    padding: 8px;
+  }
+
+  .search form button i {
+    font-size: 12px;
+  }
+
+  div.header div.pay-header, div.burger-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+    div.header div.burger-menu {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    background-color: #1259c3;
+    border-radius: 6px;
+  }
+
+
+  header div.header div#pay-header {
+    font-size: 12px;
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav.topbar ul {
+    display: none;
+  }
+
+  div.header div.pay-header, div.burger-menu i.burger-icon {
+    color: white;
+  }
+
+  div.title h3 {
+    font-size: 24px;
+  }
+
+  section.products article {
+    width: 100%;
+    box-shadow: none;
+  } 
+
+  section.products article div.products-img {
+    height: auto;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer div.credit-card, div.delivery, div.security {
+
+    margin-bottom: 16px;
+  }
+
+  footer p.footer-title{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  footer p.footer-text, p.copyright{
+    font-size: 16px;
+  }
+
+
+
+
+
 }
