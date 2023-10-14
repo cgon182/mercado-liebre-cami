@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/register.css"> 
+    <link rel="stylesheet" href="css/login.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
@@ -41,69 +41,13 @@
         </nav>
     </header>
 
-    <h2> Registrate</h2>
-    <p class="text-register">Y disfrutá de los miles de descuentos que sólo vas a poder encontrar en Mercado Liebre</p>
-    <form class="register" action="/register" method="post">
+    <h2> Iniciá sesión</h2>
+    <p class="text-login">No te pierdas de ninguna oferta</p>
+    <form class="login" action="/login" method="post">
         <label class="form-title" for="name"> Nombre y apellido:</label>
         <input type="text" name="name">
-
-
-        <label class="form-title" for="user"> Nombre de usuario:</label>
+        <label class="form-title" for="user"> Contraseña</label>
         <input type="text" name="user">
-
-        <label class="form-title" for="email"> Email:</label>
-        <input type="email" name="email">
-
-        <label class="form-title" for="fecha_nacimiento"> Fecha de nacimiento:</label>
-        <input type="date" name="fecha_nacimiento">
-
-        <label class="form-title" for="domicilio">Domicilio:</label>
-        <input type="text" name="domicilio">
-
-        <label class="form-title" for="perfil_usuario">Perfil del usuario:</label>
-        <label>
-            <input class="send" type="radio" name="perfil_usuario" value="Comprador">Comprador
-        </label>
-        <label>
-            <input class="send" type="radio" name="perfil_usuario" value="Vendedor">Vendedor
-        </label>
-        </select>
-
-        <label class="form-title" for="categorias_interes">Categorías de interés:</label>
-        <label>
-            <input type="checkbox" name="categorias_interes" value="Electro">
-            Electro
-          </label>
-          <label>
-            <input type="checkbox" name="categorias_interes" value="Moda">
-            Moda
-          </label>
-          <label>
-            <input type="checkbox" name="categorias_interes" value="Hogar">
-            Hogar
-          </label>
-          <label>
-            <input type="checkbox" name="categorias_interes" value="Juguetería">
-            Juguetería
-          </label>
-          <label>
-            <input type="checkbox" name="categorias_interes" value="Vida sana">
-            Vida sana
-          </label>
-        <br>
-
-        <label class="form-title" for="foto_usuario">Foto de usuario:</label>
-        <input type="file" id="foto_usuario" name="foto_usuario" accept="image/*" required>
-        <br>
-
-        <label class="form-title" for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required>
-        <br>
-
-        <label class="form-title" for="confirmar_contrasena">Confirmar contraseña:</label>
-        <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
-        <br>
-
         <input class="submit" type="submit" value="Enviar">
         <input class="reset" type="reset" value="Borrar datos">
     </form>

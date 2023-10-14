@@ -324,9 +324,34 @@ p.copyright {
   footer p.footer-text, p.copyright{
     font-size: 16px;
   }
+}
 
+@media (min-width: 768px) {
+  section.products article {
+    width: 45%;
+  } 
 
+  section.products article div.products-img {
+    height: auto;
+  }
 
+}
 
+@media (min-width: 769px) {
+  section.products article {
+    width: 22%;
+  } 
 
+  section.products article div.products-img {
+    height: auto;
+  }
+
+  footer p.footer-title{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  footer p.footer-text, p.copyright{
+    font-size: 16px;
+  }
 }
