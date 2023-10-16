@@ -133,6 +133,13 @@ section.products article {
   padding: 15px;
 }
 
+section.products article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+
+
 section.products article div.products-img{
   height: 25vw;
   display: flex;
@@ -176,10 +183,6 @@ section.products article div.cost-discount i.truck:hover {
 }
 
 
-
-
-
-
 section.products article div.cost-discount span.discount {
   font-size: 16px;
   color: #39b54a;
@@ -195,21 +198,19 @@ section.products article div.cost-discount span.cost {
   margin-right: 16px;
 }
 
-section.products article div.description span {
+section.products article div.cost-discount {
   font-size: 16px;
   color: #666;
   opacity: 0;
   transition-duration:  0.3s;
-  box-shadow: none;
+  box-shadow: none; 
 }
 
-section.products article:hover div.description span{
+section.products article:hover div.cost-discount{
   opacity: 1;
 }
 
-section.products article:hover {
-  box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
+
 
 footer {
   display: flex;
