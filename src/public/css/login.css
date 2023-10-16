@@ -138,6 +138,10 @@ input, select, textarea {
     border-radius: 8px;
 }
 
+input#foto_usuario {
+  background: none;
+}
+
 label {
     margin-top: 8px;
 }
@@ -282,15 +286,10 @@ header div.header {
     div.title h3 {
       font-size: 24px;
     }
-  
-    section.products article {
-      width: 100%;
-      box-shadow: none;
-    } 
-  
-    section.products article div.products-img {
-      height: auto;
-    }
+
+    form.login {
+      padding-left: 24px;
+      padding-right: 24px;
   
     footer {
       display: block;
