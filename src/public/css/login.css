@@ -266,7 +266,6 @@ header div.header {
       border-radius: 6px;
     }
   
-  
     header div.header div#pay-header {
       font-size: 12px;
       font-size: 12px;
@@ -337,4 +336,5 @@ header div.header {
     footer p.footer-text, p.copyright{
       font-size: 16px;
     }
+  }
 }
